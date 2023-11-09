@@ -1,0 +1,143 @@
+/* 
+CTC Separate Stylesheet
+Updated: 2023-07-04 17:21:44
+*/
+.current-menu-item,
+.current_page_item span {
+  text-decoration: underline;
+  color: black;
+}
+
+body p {
+  font-family: "Montserrat";
+}
+
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Garamond";
+  font-weight: 200;
+}
+
+a.header-logo-text {
+  margin: 0;
+}
+
+.header-logo {
+  padding: 0px 0px;
+}
+
+.header span,
+.header li,
+.header p {
+  font-family: "Garamond";
+}
+
+.header-logo-text {
+  font-family: "Garamond";
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+.top-header-container,
+.left-header ul,
+.right-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-header-container {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  background-color: #c9d4c4;
+  transition: all 0.3s ease-in-out;
+}
+
+.left-header ul {
+  list-style: none;
+  margin: 0;
+}
+
+.left-header a {
+  text-decoration: none;
+  color: black;
+}
+
+.right-header a {
+    color: black;
+}
+
+.top-header-container a:hover {
+  color: #707070;
+}
+
+.top-header-container a:hover {
+  transform: scale(1.1);
+}
+
+#menu-primary-nav {
+  display: flex;
+  justify-content: center;
+}
+
+#primary-nav a:hover {
+  color: #707070;
+}
+
+@media only screen and (min-width: 961px) {
+  .right-header {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 15%;
+    min-width: 150px;
+    padding-right: 10px;
+  }
+
+  .right-header p {
+    margin: 0;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fdf1d9;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+  .wrapper.wrapper-header {
+    max-width: 2000px;
+  }
+}
+
+@media only screen and (max-width: 961px) {
+  .header-logo-text {
+    font-size: 1em;
+  }
+
+  .category-hamburger {
+    display: none;
+  }
+
+  .right-header {
+    display: none;
+  }
+
+  #menu-primary-nav {
+    flex-direction: column;
+  }
+
+  #primary-nav {
+    background-color: #fdf1d9;
+    margin: 0;
+    padding: 0px;
+  }
+
+  #primary-nav li:hover {
+    background-color: white;
+  }
+}
