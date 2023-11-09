@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
 	<!-- Main Content Section -->
-	<div class="content">
-		<div class="wrapper wrapper-content">
+	<div class="front-page-content">
+		<div>
 			<?php mvt_content_before(); ?>
-			<main id="content" class="content-container">
-				<div id="post-carousel"></div>
+			<main>
+				<div id="react-app"></div>
 			</main>
 		</div>
 	</div>

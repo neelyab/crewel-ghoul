@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PostCarousel from './PostCarousel';
+import App from './App';
+import './styles/main.css'
 
 
-ReactDOM.render(<PostCarousel/>, document.querySelector("#post-carousel"));
+ReactDOM.render(<App/>, document.querySelector("#react-app"));

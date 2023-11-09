@@ -1,0 +1,90 @@
+.front-page-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.popular-tutorials {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.popular-tutorials h2 {
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 2em;
+    padding-top: 20px;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.blog-card-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+    border-left: 2px dashed #FFB5A7;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px;
+    max-width: 700px;
+}
+
+.blog-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.blog-card-img img {
+    width: 100%;
+    max-width: 180px;
+    margin: 0;
+    aspect-ratio: 1/1;
+    height: auto;
+}
+
+.blog-card-img {
+    aspect-ratio: 1/1 auto;
+    max-height: 180px;
+}
+
+.blog-card-title, .featured-blog-card-title {
+    font-family: 'Myriad Pro';
+    text-transform: uppercase;
+}
+
+.featured-blog-card, .featured-blog-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featured-blog-card {
+    padding: 20px 50px;
+}
+
+.featured-blog-card-img {
+    aspect-ratio: 1/1 auto;
+    max-width: 600px;
+}

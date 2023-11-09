@@ -23,15 +23,6 @@ if (! function_exists('fa_custom_setup_kit') ) {
 
 fa_custom_setup_kit('https://kit.fontawesome.com/1fefd12715.js');
 
-// load React components
-
-function load_assets() {
-  wp_enqueue_script('ourmainjs', get_theme_file_uri('/build/index.js'), array('wp-element'), '1.0', true);
-  // wp_enqueue_style('ourmaincss', get_theme_file_uri('/build/index.css'));
-}
-
-add_action('wp_enqueue_scripts', 'load_assets');
-
 /** Basic Definitions **
  * Use mv_trellis_child_set_options() to define the child theme version and other necessary settings. .
  * Options::set_multiple will enqueue stylesheets and scripts.
@@ -53,3 +44,12 @@ function mv_trellis_child_set_options() {
   }
 
 add_action( 'mv_trellis_parent_loaded', 'mv_trellis_child_set_options' );
+
+// load React components
+
+function load_assets() {
+  wp_enqueue_script('ourmainjs', get_theme_file_uri('/build/index.js'), array('wp-element'), '1.0', true);
+  wp_enqueue_style('ourmaincss', get_theme_file_uri('/build/index.css'));
+}
+
+add_action('wp_enqueue_scripts', 'load_assets');
