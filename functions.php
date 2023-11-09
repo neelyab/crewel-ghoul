@@ -2,26 +2,6 @@
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) exit;
 
-// BEGIN ENQUEUE PARENT ACTION
-// AUTO GENERATED - Do not modify or remove comment markers above or below:
-
-if ( !function_exists( 'chld_thm_cfg_locale_css' ) ):
-    function chld_thm_cfg_locale_css( $uri ){
-        if ( empty( $uri ) && is_rtl() && file_exists( get_template_directory() . '/rtl.css' ) )
-            $uri = get_template_directory_uri() . '/rtl.css';
-            echo $uri;
-        return $uri;
-    }
-endif;
-add_filter( 'locale_stylesheet_uri', 'chld_thm_cfg_locale_css' );
-         
-if ( !function_exists( 'child_theme_configurator_css' ) ):
-    function child_theme_configurator_css() {
-        wp_enqueue_style( 'chld_thm_cfg_separate', trailingslashit( get_stylesheet_directory_uri() ) . 'ctc-style.css', array( 'mv-trellis' ) );
-    }
-endif;
-add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
-
 /**
  * Font Awesome Kit Setup
  *
@@ -47,23 +27,29 @@ fa_custom_setup_kit('https://kit.fontawesome.com/1fefd12715.js');
 
 function load_assets() {
   wp_enqueue_script('ourmainjs', get_theme_file_uri('/build/index.js'), array('wp-element'), '1.0', true);
-  wp_enqueue_style('ourmaincss', get_theme_file_uri('/build/index.css'));
+  // wp_enqueue_style('ourmaincss', get_theme_file_uri('/build/index.css'));
 }
 
 add_action('wp_enqueue_scripts', 'load_assets');
 
-// END ENQUEUE PARENT ACTION
-function mv_trellis_child_set_options() {
-  $child_version = '0.0.1';
-  \Mediavine\Trellis\Options::set_multiple(
-      [
-          'child_name'    => '<your theme name>',
-          'child_version' => $child_version,
-          'child_css'     => get_stylesheet_directory_uri() . "/assets/dist/css/main.$child_version.css",
-          'child_js'      => get_stylesheet_directory_uri() . "/assets/dist/js/main.$child_version.js",
-      ]
-  );
-}
-add_action( 'mv_trellis_parent_loaded', 'mv_trellis_child_set_options' );
+/** Basic Definitions **
+ * Use mv_trellis_child_set_options() to define the child theme version and other necessary settings. .
+ * Options::set_multiple will enqueue stylesheets and scripts.
+ * 
+ * To learn more about functions available to Trellis child themes, see: https://mediavine.github.io/trellis-docs/reference/functions/
+ * To learn more about settings available to Trellis child themes, see: https://mediavine.github.io/trellis-docs/getting-started/trellis-settings/
+ */
 
-add_filter( 'mv_trellis_enqueue_main_style', '__return_false' );
+function mv_trellis_child_set_options() {
+    $child_version = '0.0.1';
+
+    \Mediavine\Trellis\Options::set_multiple(
+        [
+            'child_name'    => 'Crewel Ghoul',
+            'child_version' => $child_version,
+            'child_css'     => get_stylesheet_directory_uri() . "/assets/index.$child_version.css",
+        ]
+    );
+  }
+
+add_action( 'mv_trellis_parent_loaded', 'mv_trellis_child_set_options' );
