@@ -14,13 +14,13 @@
             </div>
             <div class="right-header">
                 <p>FOLLOW:</p>
-                <a href = "https://instagram.com/amandafoxembroidery">
+                <a href = "https://instagram.com/amandafoxembroidery" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
-                <a href = "https://youtube.com/@crewelghoul">
+                <a href = "https://youtube.com/@crewelghoul" target="_blank">
                     <i class="fa-brands fa-youtube"></i>                
                 </a>
-                <a href = "https:pinterest.com/crewelghoul">
+                <a href = "https://pinterest.com/crewelghoul" target="_blank">
                     <i class="fa-brands fa-pinterest"></i>                
                 </a>
             </div>

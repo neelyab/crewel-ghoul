@@ -1,0 +1,25 @@
+{
+  "name": "mediavine-trellis-child",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neelyab/crewel-ghoul.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neelyab/crewel-ghoul/issues"
+  },
+  "homepage": "https://github.com/neelyab/crewel-ghoul#readme",
+  "dependencies": {
+    "@wordpress/scripts": "^26.16.0"
+  }
+}
