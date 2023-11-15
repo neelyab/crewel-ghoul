@@ -19,6 +19,7 @@ class PostCarousel extends React.Component {
       this.setState({ hasError: true });
     }
     const posts = await response.json();
+    console.log(posts);
     return posts;
   }
   nextPost = () => {
@@ -60,8 +61,13 @@ class PostCarousel extends React.Component {
     let localeString = new Date(
       this.state.posts[this.state.count].date
     ).toLocaleDateString();
+
+    let blogTitle = this.state.posts[this.state.count].title.rendered;
+    blogTitle = blogTitle.replace(/&#8217;/g, "'");
+
+
     this.setState({
-      title: this.state.posts[this.state.count].title.rendered,
+      title: blogTitle,
       date: localeString,
       postLink: this.state.posts[this.state.count].link,
     });
