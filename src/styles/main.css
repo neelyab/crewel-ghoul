@@ -1,90 +1,189 @@
 .front-page-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-.popular-tutorials {
+/* POST CAROUSEL */
+
+.post-carousel-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.recent-post-image {
+  display: flex;
+  width: 50%;
+  z-index: 0;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.recent-post-image i {
+  position: relative;
+  z-index: 2;
+  top: 50%;
+  color: whitesmoke;
+  text-shadow: 0 0 3px #000;
+  opacity: 80%;
+  font-size: 2em;
+}
+.post-image {
+  width: 100%;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  border-right: solid black 2px;
+  border-bottom: solid black 2px;
+}
+
+#fade-in-animation {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.recent-post-image #chevron-right {
+  right: 10%;
+}
+
+.recent-post-image #chevron-left {
+  right: 92%;
+}
+
+#chevron-right:hover,
+#chevron-left:hover {
+  cursor: pointer;
+  color: #ffb5a7;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.recent-post-info {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.recent-post-info .date-banner {
+    background-color: #f8edeb;
+    padding: 10px 15px;
+}
+
+.recent-post-info h3 {
+    font-size: 2.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.recent-post-info button {
+    background-color: #FFB5A7;
+    padding: 10px 20px;
+    border: none;
+    font-weight:100;
+    color: black;
+}
+ 
+.recent-post-info button:hover {
+    background-color: #FEC89A;
+    transform: scale(1.1);
+}
+
+/* POPULAR TUTORIALS */
+.popular-tutorials {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 .popular-tutorials h2 {
-    text-align: center;
-    margin: 0 auto;
-    text-transform: uppercase;
-    font-size: 2em;
-    padding-top: 20px;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 2em;
+  padding-top: 20px;
 }
 
 .post-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .blog-card-container {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 50px;
-    border-left: 2px dashed #FFB5A7;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 50px;
+  border-left: 2px dashed #ffb5a7;
 }
 
 .blog-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    min-width: 300px;
-    max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 300px;
+  max-width: 700px;
 }
 
 .blog-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 20px;
-    max-width: 300px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  max-width: 300px;
+  text-align: center;
 }
 
 .blog-card-img img {
-    width: 100%;
-    max-width: 180px;
-    margin: 0;
-    aspect-ratio: 1/1;
-    height: auto;
+  width: 100%;
+  max-width: 180px;
+  margin: 0;
+  aspect-ratio: 1/1;
+  height: auto;
 }
 
 .blog-card-img {
-    aspect-ratio: 1/1 auto;
-    max-height: 180px;
+  aspect-ratio: 1/1 auto;
+  max-height: 180px;
 }
 
-.blog-card-title, .featured-blog-card-title {
-    font-family: 'Myriad Pro';
-    text-transform: uppercase;
+.blog-card-title,
+.featured-blog-card-title {
+  font-family: "Myriad Pro";
+  text-transform: uppercase;
 }
 
-.featured-blog-card, .featured-blog-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.featured-blog-card,
+.featured-blog-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .featured-blog-card {
-    padding: 20px 50px;
+  padding: 20px 50px;
 }
 
 .featured-blog-card-img {
-    aspect-ratio: 1/1 auto;
-    max-width: 600px;
+  aspect-ratio: 1/1 auto;
+  max-width: 600px;
 }

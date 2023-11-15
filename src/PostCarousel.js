@@ -10,13 +10,13 @@ class PostCarousel extends React.Component {
       title: "",
       date: "",
       postLink: "",
-      hasError: false
+      hasError: false,
     };
   }
   async loadPosts() {
     const response = await fetch("/wp-json/wp/v2/posts?_embed&per_page=4");
     if (!response.ok) {
-      this.setState({hasError: true})
+      this.setState({ hasError: true });
     }
     const posts = await response.json();
     return posts;
@@ -57,13 +57,14 @@ class PostCarousel extends React.Component {
     }
   }
   updatePostInfo() {
-    let localeString = new Date(this.state.posts[this.state.count].date).toLocaleDateString();
-    this.setState({ 
+    let localeString = new Date(
+      this.state.posts[this.state.count].date
+    ).toLocaleDateString();
+    this.setState({
       title: this.state.posts[this.state.count].title.rendered,
       date: localeString,
-      postLink: this.state.posts[this.state.count].link
-     });
-
+      postLink: this.state.posts[this.state.count].link,
+    });
   }
   componentDidMount() {
     this.loadPosts().then((posts) => {
@@ -80,18 +81,40 @@ class PostCarousel extends React.Component {
     return (
       <div>
         {this.state.posts ? (
-          <>
+          <div className="post-carousel-container">
             <div className="recent-post-image">
-              {this.state.url != "null" ? <img src={this.state.url} alt={this.state.title}></img> : ""}
-              <i class="fa-solid fa-chevron-left" onClick={() => this.previousPost()}></i>
-              <i class="fa-solid fa-chevron-right" onClick={() => this.nextPost()}></i>
+              {this.state.url != "null" ? (
+                <div
+                  className="post-image"
+                  id="fade-in-animation"
+                  style={{ backgroundImage: `url(${this.state.url})` }}
+                  alt={this.state.title}
+                ></div>
+              ) : (
+                <div
+                  className="post-image"
+                  style={{ backgroundColor: "#F8EDEB" }}
+                ></div>
+              )}
+              <i
+                class="fa-solid fa-chevron-left --fa-border-color"
+                id="chevron-left"
+                onClick={() => this.previousPost()}
+              ></i>
+              <i
+                class="fa-solid fa-chevron-right --fa-border-color"
+                id="chevron-right"
+                onClick={() => this.nextPost()}
+              ></i>
             </div>
             <div className="recent-post-info">
               <span className="date-banner">{this.state.date}</span>
               <h3>{this.state.title}</h3>
-              <a href={this.state.postLink}><button>READ MORE</button></a>
+              <a href={this.state.postLink}>
+                <button>READ MORE</button>
+              </a>
             </div>
-          </>
+          </div>
         ) : (
           ""
         )}

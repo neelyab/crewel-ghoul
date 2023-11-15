@@ -5,6 +5,6 @@ import './styles/main.css'
 
 const root = document.querySelector("#react-app");
 if (root) {
-    ReactDOM.render(<App/>, document.querySelector("#react-app"));
+    ReactDOM.render(<App/>, root);
 }
 
