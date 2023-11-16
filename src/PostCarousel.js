@@ -58,10 +58,12 @@ class PostCarousel extends React.Component {
     }
   }
   updatePostInfo() {
+    // format date
     let localeString = new Date(
       this.state.posts[this.state.count].date
     ).toLocaleDateString();
-
+    
+    //format apostrophes 
     let blogTitle = this.state.posts[this.state.count].title.rendered;
     blogTitle = blogTitle.replace(/&#8217;/g, "'");
 

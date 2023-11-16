@@ -8,9 +8,20 @@ function App() {
   return (
     <div className="front-page-container">
       <PostCarousel />
-      <div className="learn-to-embroider">
-        <div className="info-box"></div>
-        <div className="parallax"></div>
+      <div className="mobile-scissors"></div>
+      <div className="learn-to-embroider-wrapper">
+        <div className="start-here-container">
+          <div className="start-here-info">
+          <h2>Learn How To Embroider</h2>
+          <p>New to embroidery? I'm so happy you're here! Get started learning all the basics today with a simple step-by-step guide...</p>
+          <a href="https://crewelghoul.com/how-to-embroider-2"><button>START HERE</button></a>
+          </div>
+        </div>
+        <div className="contents">
+          <div className="image-container">
+          <img className="scissors" src="https://crewelghoul.com/wp-content/uploads/2023/11/hoop-2-e1700101437278.png"></img>
+          </div>
+        </div>
       </div>
       <div className="popular-tutorials">
         <h2>Popular Tutorials</h2>
@@ -38,7 +49,10 @@ function App() {
             />
           </div>
         </div>
-        <div></div>
+        <div className="patreon-container">
+          <h2>Monthly Embroidery Patterns</h2>
+          <a href="https://patreon.com/crewelghoul" target="_blank"><button>LEARN MORE</button></a>
+        </div>
       </div>
     </div>
   );
