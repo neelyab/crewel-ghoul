@@ -72,39 +72,41 @@
   transition: all 0.3s ease-in-out;
 }
 
-
 .recent-post-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 
 .recent-post-info .date-banner {
-    background-color: #f8edeb;
-    padding: 10px 15px;
+  background-color: #f8edeb;
+  padding: 10px 15px;
 }
 
 .recent-post-info h3 {
-    font-size: 2.5rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .recent-post-info button {
-    background-color: #FFB5A7;
-    padding: 10px 20px;
-    border: none;
-    font-weight:100;
-    color: black;
-    box-shadow: 5px 8px 8px rgb(154, 154, 154);
+  background-color: #ffb5a7;
+  padding: 10px 20px;
+  border: none;
+  font-weight: 100;
+  color: black;
+  box-shadow: 5px 8px 8px rgb(154, 154, 154);
 }
- 
-.recent-post-info button:hover,  .start-here-container button:hover, .patreon-container button:hover {
-    background-color: #FEC89A;
-    transform: scale(1.1);
+
+.recent-post-info button:hover,
+.start-here-container button:hover,
+.patreon-container button:hover,
+.popular-patterns button:hover {
+  background-color: #fec89a;
+  transform: scale(1.1);
 }
 
 /* POPULAR TUTORIALS */
@@ -195,79 +197,80 @@
 }
 
 .learn-to-embroider-wrapper {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    min-height: 600px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  min-height: 600px;
 }
 
 .contents {
-    display: flex;
-    width: 52%;
-    background-color: #F8EDEB;
-    max-height: 800px;
+  display: flex;
+  width: 52%;
+  background-color: #f8edeb;
+  max-height: 800px;
 }
 
 .start-here-container {
-    display: flex;
-    width: 48%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 40px;
-    background-color: #FFB5A7;
-    max-height: 800px;
+  display: flex;
+  width: 48%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 40px;
+  background-color: #ffb5a7;
+  max-height: 800px;
 }
 
 .start-here-info {
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-    padding: 80px 80px;
-    border-radius: 20px;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 80px 80px;
+  border-radius: 20px;
 }
 
 .start-here-info h2 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .start-here-info p {
-    max-width: 515px;
-    font-size: 1.3rem;
+  max-width: 515px;
+  font-size: 1.3rem;
 }
 
 .start-here-info button {
-    background-color: #FEC89A;
-    color: black;
-    padding: 10px 60px;
+  background-color: #fec89a;
+  color: black;
+  padding: 10px 60px;
 }
 
 .background {
-    transform: translateZ(-10px) scale(1.5);
+  transform: translateZ(-10px) scale(1.5);
 }
 
 .contents .image-container {
-    display: flex;
-    width: 100%;
-    position: relative
+  display: flex;
+  width: 100%;
+  position: relative;
 }
 
 .scissors {
-    position: absolute;
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    z-index: 1;
-    overflow: visible;
-    left: 0px;
-    top: -20%; 
+  position: absolute;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  z-index: 1;
+  overflow: visible;
+  left: 0px;
+  top: -20%;
 }
 
-.start-here-container button, .info-card button {
-  background-color: #FEC89A;
+.start-here-container button,
+.info-card button {
+  background-color: #fec89a;
   color: black;
   box-shadow: 5px 8px 8px rgb(154, 154, 154);
 }
@@ -275,48 +278,47 @@
 /* PATREON INFO BOX */
 
 .patreon-container {
-    background-image: url("https://crewelghoul.com/wp-content/uploads/2023/11/hoop.jpg");
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  background-image: url("https://crewelghoul.com/wp-content/uploads/2023/11/hoop-5.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .patreon-container h2 {
-    margin-top: 60px;
-    font-size: 2.5rem;
-    text-transform: uppercase;
+  margin-top: 60px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
 }
 
 .patreon-container p {
-    max-width: 500px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
-
 .patreon-container a button {
-    display: flex;
-    justify-content: center;
-    padding: 20px 30px;
-    margin: 0 auto;
-    width: 20%;
-    background-color: #FFB5A7;
-    color: white;
-    font-size: 1.2em;
-    box-shadow: 5px 8px 8px rgb(154, 154, 154);
+  display: flex;
+  justify-content: center;
+  padding: 20px 30px;
+  margin: 0 auto;
+  width: 20%;
+  background-color: #ffb5a7;
+  color: white;
+  font-size: 1.2em;
+  box-shadow: 5px 8px 8px rgb(154, 154, 154);
 }
 
 .patreon-container a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .patreon-container a button:hover {
-    color: black;
+  color: black;
 }
 
 /* EMBROIDERY STITCHES */
@@ -365,7 +367,7 @@
 }
 
 .info-card button:hover {
-  background-color: #FFB5A7;
+  background-color: #ffb5a7;
   color: white;
   transform: scale(1.2);
 }
@@ -400,10 +402,11 @@ STYLES OF EMBROIDERY */
   text-transform: uppercase;
   text-align: center;
   padding: 2% 4%;
-  border: 1px solid #FFB5A7;
+  border: 1px solid #ffb5a7;
   margin: 0 auto;
   width: 100%;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-family: "Minion";
 }
 
 .styles li:nth-of-type(odd) {
@@ -411,11 +414,11 @@ STYLES OF EMBROIDERY */
 }
 
 #bottom-li {
-  border-bottom: 1px solid #FFB5A7;
+  border-bottom: 1px solid #ffb5a7;
 }
 
 .styles li:hover {
-  background: #FFB5A7;
+  background: #ffb5a7;
   color: white;
   font-weight: bold;
 }
@@ -430,171 +433,302 @@ STYLES OF EMBROIDERY */
   background-position: center;
   width: 50%;
   height: 100%;
-  min-height: 600px;
+  min-height: 620px;
   display: flex;
   border-top: 2px solid black;
   border-right: 2px solid black;
   border-bottom: 2px solid black;
 }
 
-@media only screen and (max-width: 1200px){
-    .scissors {
-        top: -10%;
-    }
-
-    .start-here-container, .start-here-info {
-        padding: 30px 30px;
-    }
-
-    .patreon-container p {
-        background-color: #ffffff85
-    }
+/* ABOUT ME */
+.about-me-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fec89a;
+  padding: 40px 40px;
 }
 
-@media only screen and (max-width: 961px) {
+#amanda-photo {
+  background-image: url("https://crewelghoul.com/wp-content/uploads/2023/11/1643667101342.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  height: 100%;
+  min-height: 500px;
+  max-width: 570px;
+  border: 10px solid white;
+}
 
-    .post-carousel-container {
-        flex-direction: column;
-        justify-content: space-between;
-        z-index: 0;
-        padding-bottom: 0;
-    }
+#about-me {
+  border: none;
+  width: 50%;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: 10px;
+}
 
-    .recent-post-info {
-        position: absolute;
-        top: 22%;
-        right: 25%;
-        z-index: 1;
-    }
+#about-me button {
+  background-color: #ffb5a7;
+}
 
-    .recent-post-image #chevron-right, .recent-post-image #chevron-left {
-        position: static;
-        display: flex;
-        align-items: center;
-      }
-      
-      .recent-post-image #chevron-left {
-        right: 92%;
-      }
+/* POPULAR PATTERNS */
+.popular-patterns {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #f8edeb;
+  padding: 30px 30px;
+}
 
-    .recent-post-info h3 {
-        font-size: 1.1em;
-        text-align: center;
-        min-height: 70px;
-    }
+.popular-patterns button {
+  background-color: white;
+  color: black;
+  padding: 20px 40px;
+  box-shadow: 5px 8px 8px rgb(154, 154, 154);
+}
 
-    .recent-post-image {
-        width: 100%;
-        height: 100%;
-        max-height: 350px;
-        margin: 0 auto;
-        justify-content: space-between;
-        padding: 0px 30px;
-    }
+.popular-patterns h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0 auto;
+}
 
-    .post-image {
-       display: none;
-    }
+.popular-patterns-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
-    .post-container, .blog-card, .styles-of-embroidery-container, .embroidery-stitches-container {
-        flex-direction: column;
-    }
+.pattern img {
+  width: 100%;
+  min-height: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  z-index: 0;
+}
 
-    .blog-card-container {
-        border-left: none;
-    }
+.pattern {
+  width: 18%;
+  min-height: 200px;
+}
 
-    .scissors, .contents {
-        display: none;
-    }
+.pattern-banner {
+  background: #ffffff;
+  padding: 10px 10px;
+  position: relative;
+  top: 12%;
+  left: 0px;
+  z-index: 1;
+  color: black;
+  font-weight: bold;
+}
 
-    .start-here-container, .start-here-info {
-        width: 100%;
-        padding: 30px 30px;
-        max-height: 450px;
-    }
+.pattern img:hover {
+  opacity: 70%;
+}
 
-
-    .mobile-scissors {
-        background-image: url("https://crewelghoul.com/wp-content/uploads/2023/11/hoop-2.png");
-        background-repeat: no-repeat;
-        min-height: 40vh;
-        background-size: cover;
-        background-position: 35% 25%;
-    }
-
-    .patreon-container a button {
-        width: 35%;
-    }
-
-    #embroidery-stitches, .info-card {
-      width: 100%;
-    }
-
-    .patreon-container {
-      background-size:cover;
-      background-position: 25% 25%;
-      position: relative;
-      opacity: 0.85;
-      margin-top: 10px;
+@media only screen and (max-width: 1200px) {
+  .scissors {
+    top: -10%;
   }
 
-  .patreon-container h2 {
-      position: absolute;
-      top: 10%;
-      left: 8%;
-      padding: 10px 5px;
-      text-shadow: 1px 1px 2px rgb(183, 161, 161);
-      margin: 0 auto;
-      margin-bottom: 40px;
-      font-size: 2rem;
-      text-align: center;
+  .start-here-container,
+  .start-here-info {
+    padding: 30px 30px;
   }
 
   .patreon-container p {
-      display: none;
+    background-color: #ffffff85;
   }
-  .patreon-container a button {
-      position: absolute;
-      top: 80%;
-      left: 15%;
-      width: 60%;
+}
+
+@media only screen and (max-width: 961px) {
+  .post-carousel-container {
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 0;
+    padding-bottom: 0;
   }
 
-  .styles, #frog-embroidery {
+  .recent-post-info {
+    position: absolute;
+    top: 22%;
+    right: 25%;
+    z-index: 1;
+  }
+
+  .recent-post-image #chevron-right,
+  .recent-post-image #chevron-left {
+    position: static;
+    display: flex;
+    align-items: center;
+  }
+
+  .recent-post-image #chevron-left {
+    right: 92%;
+  }
+
+  .recent-post-info h3 {
+    font-size: 1.1em;
+    text-align: center;
+    min-height: 70px;
+  }
+
+  .recent-post-image {
     width: 100%;
+    height: 100%;
+    max-height: 350px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0px 30px;
+  }
+
+  .post-image {
+    display: none;
+  }
+
+  .post-container,
+  .blog-card,
+  .styles-of-embroidery-container,
+  .embroidery-stitches-container,
+  .about-me-container {
+    flex-direction: column;
+  }
+
+  .blog-card-container {
+    border-left: none;
+  }
+
+  .scissors,
+  .contents {
+    display: none;
+  }
+
+  .start-here-container,
+  .start-here-info {
+    width: 100%;
+    padding: 30px 30px;
+    max-height: 450px;
+  }
+
+  .mobile-scissors {
+    background-image: url("https://crewelghoul.com/wp-content/uploads/2023/11/hoop-2.png");
+    background-repeat: no-repeat;
+    min-height: 40vh;
+    background-size: cover;
+    background-position: 35% 25%;
+  }
+
+  .patreon-container a button {
+    width: 35%;
+  }
+
+  #embroidery-stitches,
+  .info-card {
+    width: 100%;
+  }
+
+  .patreon-container {
+    background-size: cover;
+    background-position: 25% 25%;
+    position: relative;
+    opacity: 0.85;
+    margin-top: 10px;
+  }
+
+  .patreon-container h2 {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    padding: 10px 5px;
+    text-shadow: 1px 1px 2px rgb(183, 161, 161);
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .patreon-container p {
+    display: none;
+  }
+  .patreon-container a button {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    width: 60%;
+  }
+
+  .styles,
+  #frog-embroidery {
+    width: 100%;
+  }
+
+  #about-me,
+  #amanda-photo {
+    width: 100%;
+    margin: 10px 0px;
+  }
+
+  .about-me-container {
+    padding: 10px 10px;
+  }
+
+  .popular-patterns-container {
+    flex-flow: row wrap;
+  }
+
+  .pattern {
+    width: 40%;
   }
 }
 
 @media only screen and (max-width: 430px) {
-    .recent-post-info {
-        top: 25%;
-    }
+  .recent-post-info {
+    top: 25%;
+  }
 
-    .learn-to-embroider-wrapper {
-      min-height: 400px;
-    }
+  .learn-to-embroider-wrapper {
+    min-height: 400px;
+  }
 
-    .start-here-info button {
-        padding: 10px 10px;
-    }
-    .start-here-info, .start-here-container {
-        padding: 15px 15px;
-    }
-    .embroidery-stitches-container {
-      padding-bottom: 20px;
-    }
-    .info-card {
-      padding: 10px 15px;
-      width: 100%;
-      text-align: center;
-      border-top: none;
-      border-bottom: none;
-    }
+  .start-here-info button {
+    padding: 10px 10px;
+  }
+  .start-here-info,
+  .start-here-container {
+    padding: 15px 15px;
+  }
+  .embroidery-stitches-container {
+    padding-bottom: 20px;
+  }
+  .info-card {
+    padding: 10px 15px;
+    width: 100%;
+    text-align: center;
+    border-top: none;
+    border-bottom: none;
+  }
 
-    #embroidery-stitches {
-      border-left: 2px solid black;
-      min-height: 300px;
-    }
+  #embroidery-stitches {
+    border-left: 2px solid black;
+    min-height: 300px;
+  }
 
+  .styles-of-embroidery-container {
+    border-top: 2px solid black;
+    padding-top: 20px;
+  }
+
+  #amanda-photo {
+    display: none;
+  }
+
+  .pattern {
+    width: 90%;
+  }
 }

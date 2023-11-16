@@ -58,6 +58,59 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="popular-patterns">
+        <h2>Popular Patterns</h2>
+        <div className="popular-patterns-container">
+          <div className="pattern">
+            <a href="https://crewelghoul.com/product/moth-stumpwork-pattern/">
+              <span className="pattern-banner">PDF DOWNLOAD</span>
+              <img
+                src="https://crewelghoul.com/wp-content/uploads/2022/10/moth-stumpwork-embroidery-pattern-scaled.jpg"
+                alt="3-d moth stumpwork"
+              ></img>
+            </a>
+          </div>
+          <div className="pattern">
+            <a href="https://crewelghoul.com/product/house-plant-stumpwork-embroidery-pattern/">
+              <span className="pattern-banner">PDF DOWNLOAD</span>
+              <img
+                src="https://crewelghoul.com/wp-content/uploads/2022/04/ficus-houseplant-embroidery-pattern-5-scaled.jpg"
+                alt="houseplant embroidery"
+              ></img>
+            </a>
+          </div>
+          <div className="pattern">
+            <a href="https://crewelghoul.com/product/garden-rabbit-thread-painting-embroidery-pattern/">
+              <span className="pattern-banner">PDF DOWNLOAD</span>
+              <img
+                src="https://crewelghoul.com/wp-content/uploads/2023/03/rabbit-thread-painting-pattern-scaled.jpg"
+                alt="rabbit embroidery"
+              ></img>
+            </a>
+          </div>
+          <div className="pattern">
+            <a href="https://crewelghoul.com/product/strawberry-mouse-embroidery-pattern/">
+              <span className="pattern-banner">PDF DOWNLOAD</span>
+              <img
+                src="https://crewelghoul.com/wp-content/uploads/2023/05/IMG_4314-scaled.jpg"
+                alt="strawberry mouse embroidery"
+              ></img>
+            </a>
+          </div>
+          <div className="pattern">
+            <a href="https://crewelghoul.com/product/baking-mouse-embroidery-pattern/">
+              <span className="pattern-banner">PDF DOWNLOAD</span>
+              <img
+                src="https://crewelghoul.com/wp-content/uploads/2023/08/IMG_5618-scaled.jpg"
+                alt="baking mouse pattern"
+              ></img>
+            </a>
+          </div>
+        </div>
+        <a href="https://crewelghoul.com/shop">
+          <button>SHOP ALL</button>
+        </a>
+      </div>
       <div className="patreon-container">
         <h2>Monthly Embroidery Patterns And Tutorials</h2>
         <p>
@@ -106,6 +159,21 @@ function App() {
           </ul>
         </div>
         <div id="frog-embroidery"></div>
+      </div>
+      <div className="about-me-container">
+        <div id="amanda-photo"></div>
+        <div id="about-me" className="info-card">
+          <h2>Hey there</h2>
+          <p>
+            I'm Amanda and I run this blog to help teach others the magic of
+            embroidery. I began embroidering years ago in college and haven't
+            stopped since. I hope this website inspires you and helps you learn
+            something new!
+          </p>
+          <a>
+            <button>About Crewel Ghoul</button>
+          </a>
+        </div>
       </div>
     </div>
   );
