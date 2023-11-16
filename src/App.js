@@ -14,7 +14,9 @@ function App() {
           <div className="start-here-info">
           <h2>Learn How To Embroider</h2>
           <p>New to embroidery? I'm so happy you're here! Get started learning all the basics today with a simple step-by-step guide...</p>
-          <a href="https://crewelghoul.com/how-to-embroider-2"><button>START HERE</button></a>
+          <a href="https://crewelghoul.com/how-to-embroider-2/" type="link">
+            <button>START HERE</button>
+            </a>
           </div>
         </div>
         <div className="contents">
@@ -49,11 +51,12 @@ function App() {
             />
           </div>
         </div>
-        <div className="patreon-container">
-          <h2>Monthly Embroidery Patterns</h2>
+      </div>
+      <div className="patreon-container">
+          <h2>Monthly Embroidery Patterns And Tutorials</h2>
+          <p>Join the Patreon community to get embroidery tips, thread painting tutorials, and a brand new pattern to stitch up every month.</p>
           <a href="https://patreon.com/crewelghoul" target="_blank"><button>LEARN MORE</button></a>
         </div>
-      </div>
     </div>
   );
 }

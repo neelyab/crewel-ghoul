@@ -41,6 +41,13 @@ function mv_trellis_child_set_options() {
             'child_css'     => get_stylesheet_directory_uri() . "/assets/index.$child_version.css",
         ]
     );
+
+      /** Accent Color and Headings Support **
+     * Use add_theme_support to use accent colors and heading options defined in Trellis Settings.
+     */
+
+    add_theme_support( 'mv_trellis_background_accent_color' );
+    add_theme_support( 'mv_trellis_headings_control' );
   }
 
 add_action( 'mv_trellis_parent_loaded', 'mv_trellis_child_set_options' );
