@@ -97,7 +97,7 @@ a.header-logo-text {
     border-bottom: 0;
 }
 
-.content, .entry-header {
+.content, .entry-header, .page-header {
   background-color: white;
 }
 
