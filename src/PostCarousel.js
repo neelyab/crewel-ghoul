@@ -66,6 +66,8 @@ class PostCarousel extends React.Component {
     //format apostrophes 
     let blogTitle = this.state.posts[this.state.count].title.rendered;
     blogTitle = blogTitle.replace(/&#8217;/g, "'");
+    blogTitle = blogTitle.replace(/&#8211;/g, '-');
+    
 
 
     this.setState({

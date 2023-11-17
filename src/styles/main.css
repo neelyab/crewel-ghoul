@@ -1,734 +1,743 @@
 .front-page-content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-/* POST CAROUSEL */
-
-.post-carousel-container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  padding-bottom: 30px;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-
-.recent-post-image {
-  display: flex;
-  width: 50%;
-  z-index: 0;
-  overflow: hidden;
-  aspect-ratio: 4/3;
-}
-
-.recent-post-image i {
-  position: relative;
-  z-index: 2;
-  top: 50%;
-  color: whitesmoke;
-  text-shadow: 0 0 3px #000;
-  opacity: 80%;
-  font-size: 2rem;
-}
-.post-image {
-  width: 100%;
-  background-repeat: no-repeat;
-  object-fit: contain;
-  background-position: center;
-  border-right: solid black 2px;
-  border-bottom: solid black 2px;
-}
-
-#fade-in-animation {
-  animation: fadeIn 2s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.recent-post-image #chevron-right {
-  right: 10%;
-}
-
-.recent-post-image #chevron-left {
-  right: 92%;
-}
-
-#chevron-right:hover,
-#chevron-left:hover {
-  cursor: pointer;
-  color: #ffb5a7;
-  transition: all 0.3s ease-in-out;
-}
-
-.recent-post-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-}
-
-.recent-post-info .date-banner {
-  background-color: #f8edeb;
-  padding: 10px 15px;
-}
-
-.recent-post-info h3 {
-  font-size: 2.5rem;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.recent-post-info button {
-  background-color: #ffb5a7;
-  padding: 10px 20px;
-  border: none;
-  font-weight: 100;
-  color: black;
-  box-shadow: 5px 8px 8px rgb(154, 154, 154);
-}
-
-.recent-post-info button:hover,
-.start-here-container button:hover,
-.patreon-container button:hover,
-.popular-patterns button:hover {
-  background-color: #fec89a;
-  transform: scale(1.1);
-}
-
-/* POPULAR TUTORIALS */
-.popular-tutorials {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-}
-
-.popular-tutorials h2 {
-  text-align: center;
-  margin: 0 auto;
-  text-transform: uppercase;
-  font-size: 2em;
-  padding-top: 20px;
-}
-
-.post-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
-.blog-card-container {
-  display: flex;
-  flex-direction: column;
-  padding: 10px 50px;
-  border-left: 2px dashed #ffb5a7;
-}
-
-.blog-card {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 300px;
-  max-width: 700px;
-}
-
-.blog-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 20px;
-  max-width: 300px;
-  text-align: center;
-}
-
-.blog-card-img img {
-  width: 100%;
-  max-width: 180px;
-  margin: 0;
-  aspect-ratio: 1/1;
-  height: auto;
-}
-
-.blog-card-img {
-  aspect-ratio: 1/1 auto;
-  max-height: 180px;
-}
-
-.blog-card-title,
-.featured-blog-card-title {
-  font-family: "Myriad Pro";
-  text-transform: uppercase;
-}
-
-.featured-blog-card,
-.featured-blog-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.featured-blog-card {
-  padding: 20px 50px;
-}
-
-.featured-blog-card-img {
-  aspect-ratio: 1/1 auto;
-  max-width: 600px;
-  margin-bottom: 20px;
-}
-
-.learn-to-embroider-wrapper {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  min-height: 600px;
-}
-
-.contents {
-  display: flex;
-  width: 52%;
-  background-color: #f8edeb;
-  max-height: 800px;
-}
-
-.start-here-container {
-  display: flex;
-  width: 48%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 40px;
-  background-color: #ffb5a7;
-  max-height: 800px;
-}
-
-.start-here-info {
-  display: flex;
-  width: 80%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: white;
-  padding: 80px 80px;
-  border-radius: 20px;
-}
-
-.start-here-info h2 {
-  text-transform: uppercase;
-}
-
-.start-here-info p {
-  max-width: 515px;
-  font-size: 1.3rem;
-}
-
-.start-here-info button {
-  background-color: #fec89a;
-  color: black;
-  padding: 10px 60px;
-}
-
-.background {
-  transform: translateZ(-10px) scale(1.5);
-}
-
-.contents .image-container {
-  display: flex;
-  width: 100%;
-  position: relative;
-}
-
-.scissors {
-  position: absolute;
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  z-index: 1;
-  overflow: visible;
-  left: 0px;
-  top: -20%;
-}
-
-.start-here-container button,
-.info-card button {
-  background-color: #fec89a;
-  color: black;
-  box-shadow: 5px 8px 8px rgb(154, 154, 154);
-}
-
-/* PATREON INFO BOX */
-
-.patreon-container {
-  background-image: url("https://crewelghoul.com/wp-content/uploads/2023/11/hoop-5.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  min-height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.patreon-container h2 {
-  margin-top: 60px;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-}
-
-.patreon-container p {
-  max-width: 500px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-
-.patreon-container a button {
-  display: flex;
-  justify-content: center;
-  padding: 20px 30px;
-  margin: 0 auto;
-  width: 20%;
-  background-color: #ffb5a7;
-  color: white;
-  font-size: 1.2em;
-  box-shadow: 5px 8px 8px rgb(154, 154, 154);
-}
-
-.patreon-container a:hover {
-  text-decoration: none;
-}
-
-.patreon-container a button:hover {
-  color: black;
-}
-
-/* EMBROIDERY STITCHES */
-
-.embroidery-stitches-container {
-  display: flex;
-  flex-direction: row;
-}
-
-#embroidery-stitches {
-  background-image: url("https://crewelghoul.com/wp-content/uploads/2023/11/IMG_6612.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 50%;
-  min-height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-top: 2px solid black;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-}
-
-.info-card {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 80px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-}
-
-.info-card p {
-  max-width: 400px;
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-.info-card h2 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-
-.info-card button:hover {
-  background-color: #ffb5a7;
-  color: white;
-  transform: scale(1.2);
-}
-/* 
-STYLES OF EMBROIDERY */
-
-.styles-of-embroidery-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-height: 600px;
-}
-
-.styles {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
-  height: 100%;
-}
-
-.styles h2 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2rem;
-}
-
-.styles li {
-  list-style: none;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 2% 4%;
-  border: 1px solid #ffb5a7;
-  margin: 0 auto;
-  width: 100%;
-  font-size: 1.5rem;
-  font-family: "Minion";
-}
-
-.styles li:nth-of-type(odd) {
-  border-bottom: none;
-}
-
-#bottom-li {
-  border-bottom: 1px solid #ffb5a7;
-}
-
-.styles li:hover {
-  background: #ffb5a7;
-  color: white;
-  font-weight: bold;
-}
-.styles ul a {
-  text-decoration: none;
-}
-
-#frog-embroidery {
-  background-image: url("https://crewelghoul.com/wp-content/uploads/2023/06/IMG_3030-scaled.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 50%;
-  height: 100%;
-  min-height: 620px;
-  display: flex;
-  border-top: 2px solid black;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-}
-
-/* ABOUT ME */
-.about-me-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #fec89a;
-  padding: 40px 40px;
-}
-
-#amanda-photo {
-  background-image: url("https://crewelghoul.com/wp-content/uploads/2023/11/1643667101342.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 50%;
-  height: 100%;
-  min-height: 500px;
-  max-width: 570px;
-  border: 10px solid white;
-}
-
-#about-me {
-  border: none;
-  width: 50%;
-  background-color: white;
-  border-radius: 20px;
-  margin-left: 10px;
-}
-
-#about-me button {
-  background-color: #ffb5a7;
-}
-
-/* POPULAR PATTERNS */
-.popular-patterns {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  text-transform: uppercase;
-  background-color: #f8edeb;
-  padding: 30px 30px;
-}
-
-.popular-patterns button {
-  background-color: white;
-  color: black;
-  padding: 20px 40px;
-  box-shadow: 5px 8px 8px rgb(154, 154, 154);
-}
-
-.popular-patterns h2 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.popular-patterns-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.pattern img {
-  width: 100%;
-  min-height: 200px;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.pattern {
-  width: 18%;
-  min-height: 200px;
-}
-
-.pattern-banner {
-  background: #ffffff;
-  padding: 10px 10px;
-  position: relative;
-  top: 12%;
-  left: 0px;
-  z-index: 1;
-  color: black;
-  font-weight: bold;
-}
-
-.pattern img:hover {
-  opacity: 70%;
-}
-
-@media only screen and (max-width: 1200px) {
-  .scissors {
-    top: -10%;
-  }
-
-  .start-here-container,
-  .start-here-info {
-    padding: 30px 30px;
-  }
-
-  .patreon-container p {
-    background-color: #ffffff85;
-  }
-}
-
-@media only screen and (max-width: 961px) {
-  .post-carousel-container {
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 0;
-    padding-bottom: 0;
-  }
-
-  .recent-post-info {
-    position: absolute;
-    top: 22%;
-    right: 25%;
-    z-index: 1;
-  }
-
-  .recent-post-image #chevron-right,
-  .recent-post-image #chevron-left {
-    position: static;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
   }
-
+  
+  /* POST CAROUSEL */
+  
+  .post-carousel-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .recent-post-image {
+    display: flex;
+    width: 50%;
+    z-index: 0;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+  }
+  
+  .recent-post-image i {
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    color: whitesmoke;
+    text-shadow: 0 0 3px #000;
+    opacity: 80%;
+    font-size: 2rem;
+  }
+  .post-image {
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+    background-position: center;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+  }
+  
+  #fade-in-animation {
+    animation: fadeIn 2s;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .recent-post-image #chevron-right {
+    right: 10%;
+  }
+  
   .recent-post-image #chevron-left {
     right: 92%;
   }
-
-  .recent-post-info h3 {
-    font-size: 1.1em;
-    text-align: center;
-    min-height: 70px;
+  
+  #chevron-right:hover,
+  #chevron-left:hover {
+    cursor: pointer;
+    color: #ffb5a7;
+    transition: all 0.3s ease-in-out;
   }
-
-  .recent-post-image {
-    width: 100%;
-    height: 100%;
-    max-height: 350px;
-    margin: 0 auto;
-    justify-content: space-between;
-    padding: 0px 30px;
-  }
-
-  .post-image {
-    display: none;
-  }
-
-  .post-container,
-  .blog-card,
-  .styles-of-embroidery-container,
-  .embroidery-stitches-container,
-  .about-me-container {
-    flex-direction: column;
-  }
-
-  .blog-card-container {
-    border-left: none;
-  }
-
-  .scissors,
-  .contents {
-    display: none;
-  }
-
-  .start-here-container,
-  .start-here-info {
-    width: 100%;
-    padding: 30px 30px;
-    max-height: 450px;
-  }
-
-  .mobile-scissors {
-    background-image: url("https://crewelghoul.com/wp-content/uploads/2023/11/hoop-2.png");
-    background-repeat: no-repeat;
-    min-height: 40vh;
-    background-size: cover;
-    background-position: 35% 25%;
-  }
-
-  .patreon-container a button {
-    width: 35%;
-  }
-
-  #embroidery-stitches,
-  .info-card {
-    width: 100%;
-  }
-
-  .patreon-container {
-    background-size: cover;
-    background-position: 25% 25%;
-    position: relative;
-    opacity: 0.85;
-    margin-top: 10px;
-  }
-
-  .patreon-container h2 {
-    position: absolute;
-    top: 10%;
-    left: 8%;
-    padding: 10px 5px;
-    text-shadow: 1px 1px 2px rgb(183, 161, 161);
-    margin: 0 auto;
-    margin-bottom: 40px;
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .patreon-container p {
-    display: none;
-  }
-  .patreon-container a button {
-    position: absolute;
-    top: 80%;
-    left: 15%;
-    width: 60%;
-  }
-
-  .styles,
-  #frog-embroidery {
-    width: 100%;
-  }
-
-  #about-me,
-  #amanda-photo {
-    width: 100%;
-    margin: 10px 0px;
-  }
-
-  .about-me-container {
-    padding: 10px 10px;
-  }
-
-  .popular-patterns-container {
-    flex-flow: row wrap;
-  }
-
-  .pattern {
-    width: 40%;
-  }
-}
-
-@media only screen and (max-width: 430px) {
+  
   .recent-post-info {
-    top: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
   }
-
-  .learn-to-embroider-wrapper {
-    min-height: 400px;
-  }
-
-  .start-here-info button {
-    padding: 10px 10px;
-  }
-  .start-here-info,
-  .start-here-container {
-    padding: 15px 15px;
-  }
-  .embroidery-stitches-container {
-    padding-bottom: 20px;
-  }
-  .info-card {
+  
+  .recent-post-info .date-banner {
+    background-color: #f8edeb;
     padding: 10px 15px;
+  }
+  
+  .recent-post-info h3 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .recent-post-info button {
+    background-color: #ffb5a7;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 100;
+    color: black;
+    box-shadow: 5px 8px 8px rgb(154, 154, 154);
+  }
+  
+  .recent-post-info button:hover,
+  .start-here-container button:hover,
+  .patreon-container button:hover,
+  .popular-patterns button:hover {
+    background-color: #fec89a;
+    transform: scale(1.1);
+  }
+  
+  /* POPULAR TUTORIALS */
+  .popular-tutorials {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
+  }
+  
+  .popular-tutorials h2 {
     text-align: center;
-    border-top: none;
-    border-bottom: none;
-  }
-
-  #embroidery-stitches {
-    border-left: 2px solid black;
-    min-height: 300px;
-  }
-
-  .styles-of-embroidery-container {
-    border-top: 2px solid black;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 2em;
     padding-top: 20px;
   }
-
+  
+  .post-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  
+  .blog-card-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+    border-left: 2px dashed #ffb5a7;
+  }
+  
+  .blog-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px;
+    max-width: 700px;
+  }
+  
+  .blog-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .blog-card-img img {
+    width: 100%;
+    max-width: 180px;
+    margin: 0;
+    aspect-ratio: 1/1;
+    height: auto;
+  }
+  
+  .blog-card-img {
+    aspect-ratio: 1/1 auto;
+    max-height: 180px;
+  }
+  
+  .blog-card-title,
+  .featured-blog-card-title {
+    font-family: "Myriad Pro";
+    text-transform: uppercase;
+  }
+  
+  .featured-blog-card,
+  .featured-blog-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .featured-blog-card {
+    padding: 20px 50px;
+  }
+  
+  .featured-blog-card-img {
+    aspect-ratio: 1/1 auto;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  .learn-to-embroider-wrapper {
+    display: flex;
+    flex-direction: row;
+    min-height: 600px;
+  }
+  
+  .contents {
+    display: flex;
+    width: 52%;
+    background-color: #f8edeb;
+    max-height: 800px;
+  }
+  
+  .start-here-container {
+    display: flex;
+    width: 48%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px;
+    background-color: #ffb5a7;
+    max-height: 800px;
+  }
+  
+  .start-here-info {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 80px 80px;
+    border-radius: 20px;
+  }
+  
+  .start-here-info h2 {
+    text-transform: uppercase;
+  }
+  
+  .start-here-info p {
+    max-width: 515px;
+    font-size: 1.3rem;
+  }
+  
+  .start-here-info button {
+    background-color: #fec89a;
+    color: black;
+    padding: 10px 60px;
+  }
+  
+  .background {
+    transform: translateZ(-10px) scale(1.5);
+  }
+  
+  .contents .image-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+  
+  .scissors {
+    position: absolute;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    z-index: 1;
+    overflow: visible;
+    left: 0px;
+    top: -20%;
+  }
+  
+  .start-here-container button,
+  .info-card button {
+    background-color: #fec89a;
+    color: black;
+    box-shadow: 5px 8px 8px rgb(154, 154, 154);
+  }
+  
+  /* PATREON INFO BOX */
+  
+  .patreon-container {
+    background-image: url("https://crewelghoul.com/wp-content/uploads/2023/11/patreon.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .patreon-container h2 {
+    margin-top: 60px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+  
+  .patreon-container p {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  
+  .patreon-container a button {
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px;
+    margin: 0 auto;
+    width: 20%;
+    background-color: #ffb5a7;
+    color: white;
+    font-size: 1.2em;
+    box-shadow: 5px 8px 8px rgb(154, 154, 154);
+  }
+  
+  .patreon-container a:hover {
+    text-decoration: none;
+  }
+  
+  .patreon-container a button:hover {
+    color: black;
+  }
+  
+  /* EMBROIDERY STITCHES */
+  
+  .embroidery-stitches-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #embroidery-stitches {
+    background-image: url("https://crewelghoul.com/wp-content/uploads/2023/11/IMG_6612.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  
+  .info-card {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 80px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  
+  .info-card p {
+    max-width: 400px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .info-card h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  
+  .info-card button:hover {
+    background-color: #ffb5a7;
+    color: white;
+    transform: scale(1.2);
+  }
+  /* 
+  STYLES OF EMBROIDERY */
+  
+  .styles-of-embroidery-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 600px;
+  }
+  
+  .styles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+  }
+  
+  .styles h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+  
+  .styles li {
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2% 4%;
+    border: 1px solid #ffb5a7;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 1.5rem;
+    font-family: "Minion";
+  }
+  
+  .styles li:nth-of-type(odd) {
+    border-bottom: none;
+  }
+  
+  #bottom-li {
+    border-bottom: 1px solid #ffb5a7;
+  }
+  
+  .styles li:hover {
+    background: #ffb5a7;
+    color: white;
+    font-weight: bold;
+  }
+  .styles ul a {
+    text-decoration: none;
+  }
+  
+  #frog-embroidery {
+    background-image: url("https://crewelghoul.com/wp-content/uploads/2023/06/IMG_3030-scaled.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+    min-height: 620px;
+    display: flex;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  
+  /* ABOUT ME */
+  .about-me-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fec89a;
+    padding: 40px 40px;
+  }
+  
   #amanda-photo {
-    display: none;
+    background-image: url("https://crewelghoul.com/wp-content/uploads/2023/11/1643667101342.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+    min-height: 500px;
+    max-width: 570px;
+    border: 10px solid white;
   }
-
+  
+  #about-me {
+    border: none;
+    width: 50%;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 10px;
+  }
+  
+  #about-me button {
+    background-color: #ffb5a7;
+  }
+  
+  /* POPULAR PATTERNS */
+  .popular-patterns {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #f8edeb;
+    padding: 30px 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .popular-patterns button {
+    background-color: white;
+    color: black;
+    padding: 20px 40px;
+    box-shadow: 5px 8px 8px rgb(154, 154, 154);
+  }
+  
+  .popular-patterns h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .popular-patterns-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .pattern img {
+    width: 100%;
+    min-height: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
   .pattern {
-    width: 90%;
+    width: 18%;
+    min-height: 200px;
   }
-}
+  
+  .pattern-banner {
+    background: #ffffff;
+    padding: 10px 10px;
+    position: relative;
+    top: 12%;
+    left: 0px;
+    z-index: 1;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .pattern img:hover {
+    opacity: 70%;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .scissors {
+      top: -10%;
+    }
+  
+    .start-here-container,
+    .start-here-info {
+      padding: 30px 30px;
+    }
+  
+    .patreon-container p {
+      background-color: #ffffff85;
+    }
+  }
+  
+  @media only screen and (max-width: 961px) {
+    .post-carousel-container {
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 0;
+      padding-bottom: 0;
+    }
+  
+    .recent-post-info {
+      position: absolute;
+      top: 22%;
+      right: 25%;
+      z-index: 1;
+    }
+  
+    .recent-post-image #chevron-right,
+    .recent-post-image #chevron-left {
+      position: static;
+      display: flex;
+      align-items: center;
+    }
+  
+    .recent-post-image #chevron-left {
+      right: 92%;
+    }
+  
+    .recent-post-info h3 {
+      font-size: 1.1em;
+      text-align: center;
+      min-height: 70px;
+      margin: 20px;
+    }
+  
+    .recent-post-image {
+      width: 100%;
+      height: 100%;
+      max-height: 350px;
+      margin: 0 auto;
+      justify-content: space-between;
+      padding: 0px 30px;
+    }
+  
+    .post-image {
+      display: none;
+    }
+  
+    .post-container,
+    .blog-card,
+    .styles-of-embroidery-container,
+    .embroidery-stitches-container,
+    .about-me-container {
+      flex-direction: column;
+    }
+  
+    .blog-card-container {
+      border-left: none;
+    }
+  
+    .scissors,
+    .contents {
+      display: none;
+    }
+  
+    .start-here-container,
+    .start-here-info {
+      width: 100%;
+      padding: 30px 30px;
+      max-height: 450px;
+    }
+  
+    .mobile-scissors {
+      background-image: url("https://crewelghoul.com/wp-content/uploads/2023/11/hoop-2.png");
+      background-repeat: no-repeat;
+      min-height: 40vh;
+      background-size: cover;
+      background-position: 35% 25%;
+    }
+  
+    .patreon-container a button {
+      width: 35%;
+    }
+  
+    #embroidery-stitches,
+    .info-card {
+      width: 100%;
+    }
+  
+    .patreon-container {
+      position: relative;
+      height: 100%;
+      background-size: cover;
+      background-position: 25% 25%;
+      opacity: 0.85;
+      margin-top: 10px;
+    }
+  
+    .patreon-container h2 {
+      position: absolute;
+      height: 100;
+      top: 10%;
+      left: 8%;
+      padding: 10px 5px;
+      text-shadow: 1px 1px 2px rgb(183, 161, 161);
+      margin: 0 auto;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    .patreon-container p {
+      display: none;
+    }
+    .patreon-container a button {
+      position: absolute;
+      top: 80%;
+      left: 15%;
+      width: 60%;
+    }
+  
+    .styles,
+    #frog-embroidery {
+      width: 100%;
+    }
+  
+    #about-me,
+    #amanda-photo {
+      width: 100%;
+      margin: 10px 0px;
+    }
+  
+    .about-me-container {
+      padding: 10px 10px;
+    }
+  
+    .popular-patterns-container {
+      flex-flow: row wrap;
+    }
+  
+    .pattern {
+      width: 40%;
+    }
+  }
+  
+  @media only screen and (max-width: 430px) {
+    .recent-post-info {
+      top: 200px;
+    }
+  
+    .learn-to-embroider-wrapper {
+      min-height: 400px;
+    }
+  
+    .start-here-info button {
+      padding: 10px 10px;
+    }
+    .start-here-info,
+    .start-here-container {
+      padding: 15px 15px;
+    }
+    .embroidery-stitches-container {
+      padding-bottom: 20px;
+    }
+    .info-card {
+      padding: 10px 15px;
+      width: 100%;
+      text-align: center;
+      border-top: none;
+      border-bottom: none;
+    }
+  
+    #embroidery-stitches {
+      border-left: 2px solid black;
+      min-height: 300px;
+    }
+  
+    .styles-of-embroidery-container {
+      border-top: 2px solid black;
+      padding-top: 20px;
+    }
+  
+    #amanda-photo {
+      display: none;
+    }
+  
+    .pattern {
+      width: 90%;
+    }
+  }
+  

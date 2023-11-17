@@ -2,7 +2,6 @@ import React from "react";
 import PostCarousel from "./PostCarousel";
 import BlogCard from "./BlogCard";
 import FeaturedBlogCard from "./FeaturedBlogCard";
-import "./styles/main.css";
 
 function App() {
   return (
